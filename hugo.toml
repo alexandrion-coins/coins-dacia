@@ -1,16 +1,7 @@
-baseURL = "https://alexandrion-coins.github.io/coins-dacia"
-title = "Roman Empire Coins"
-theme = "showcase"
+baseURL = "https://alexandrion-coins.github.io/coins-dacia/"
+languageCode = "en-us"
+title = "Dacia Numismatic Collection"
 
 [taxonomies]
-  country = "countries"
-  material = "materials"
-  grade = "grades"
-
-[params]
-  description = "DACIA ROMANA"
-  author = "Alexandrion"
-  darkMode = true
-
-[security.node.permissions]
-disable = true
+  tag = ""
+  category = ""

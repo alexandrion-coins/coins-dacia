@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+{{ partial "head.html" . }}
+<body>
+  <header>
+    <div class="container" style="padding:0; width:100%; display:flex; justify-content:space-between; align-items:center;">
+      <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+      <nav>
+        <a href="{{ "/coins/" | relURL }}" style="color: var(--text-main); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em;">Collection</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer style="border-top: 1px solid var(--border-color); text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.85rem; margin-top: 4rem;">
+    <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+  </footer>
+</body>
+</html>

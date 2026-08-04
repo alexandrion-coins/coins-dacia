@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="container" style="max-width: 900px;">
+  <a href="{{ "/coins/" | relURL }}" style="color: var(--accent-gold); text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 2rem;">&larr; Back to Catalog</a>
+  
+  <h1 style="color: var(--accent-gold); font-size: 2.2rem; font-weight: 300; margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">{{ .Title }}</h1>
+  
+  <!-- Image Showcase Gallery -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0; background: var(--card-bg); padding: 2rem; border: 1px solid var(--border-color); border-radius: 6px;">
+    {{ if .Params.obverse_image }}
+    <div style="text-align: center;">
+      <img src="{{ .Params.obverse_image }}" alt="Obverse" style="width: 100%; max-width: 280px; border-radius: 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.8); background: #000; padding: 0.5rem;">
+      <p style="color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 1rem;">Obverse</p>
+    </div>
+    {{ end }}
+    {{ if .Params.reverse_image }}
+    <div style="text-align: center;">
+      <img src="{{ .Params.reverse_image }}" alt="Reverse" style="width: 100%; max-width: 280px; border-radius: 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.8); background: #000; padding: 0.5rem;">
+      <p style="color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 1rem;">Reverse</p>
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- Technical Spec Sheet -->
+  <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 2rem; margin-bottom: 3rem;">
+    <h3 style="color: var(--accent-gold); margin-top: 0; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; margin-bottom: 1.5rem;">Numismatic Data</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+      <tr><th style="text-align: left; color: var(--text-muted); padding: 8px 0; width: 30%; font-weight: normal;">Ruler</th><td style="padding: 8px 0;">{{ .Params.ruler }}</td></tr>
+      <tr><th style="text-align: left; color: var(--text-muted); padding: 8px 0; font-weight: normal;">Denomination</th><td style="padding: 8px 0;">{{ .Params.denomination }}</td></tr>
+      <tr><th style="text-align: left; color: var(--text-muted); padding: 8px 0; font-weight: normal;">Mint & Date</th><td style="padding: 8px 0;">{{ .Params.mint }} ({{ .Params.date_minted }})</td></tr>
+      <tr><th style="text-align: left; color: var(--text-muted); padding: 8px 0; font-weight: normal;">Weight / Size</th><td style="padding: 8px 0;">{{ .Params.weight }} &bull; {{ .Params.diameter }}</td></tr>
+      <tr><th style="text-align: left; color: var(--text-muted); padding: 8px 0; font-weight: normal;">Reference</th><td style="padding: 8px 0;">{{ .Params.ric_ref }}</td></tr>
+    </table>
+  </div>
+
+  <!-- Description / History -->
+  <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-main);">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
