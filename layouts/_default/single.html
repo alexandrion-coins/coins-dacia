@@ -1,6 +1,19 @@
 {{ define "main" }}
 <div class="container" style="max-width: 900px;">
   <a href="{{ "/coins/" | relURL }}" style="color: var(--accent-gold); text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 2rem;">&larr; Back to Catalog</a>
+<!-- Next / Previous Specimen Navigation -->
+<div style="display: flex; justify-content: space-between; margin-bottom: 2rem; font-size: 0.9rem;">
+  <div>
+    {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" style="color: var(--accent-gold); text-decoration: none;">&larr; Previous: {{ .Title }}</a>
+    {{ end }}
+  </div>
+  <div>
+    {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" style="color: var(--accent-gold); text-decoration: none;">Next: {{ .Title }} &rarr;</a>
+    {{ end }}
+  </div>
+</div>
   
   <h1 style="color: var(--accent-gold); font-size: 2.2rem; font-weight: 300; margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">{{ .Title }}</h1>
   
