@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Grades on Roman Empire Coins</title><link>https://alexandrion-coins.github.io/coins-dacia/grades/</link><description>Recent content in Grades on Roman Empire Coins</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alexandrion-coins.github.io/coins-dacia/grades/index.xml" rel="self" type="application/rss+xml"/><item><title>Very Fine</title><link>https://alexandrion-coins.github.io/coins-dacia/grades/very-fine/</link><pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate><guid>https://alexandrion-coins.github.io/coins-dacia/grades/very-fine/</guid><description/></item><item><title>Sehr Schön-Vorzüglich</title><link>https://alexandrion-coins.github.io/coins-dacia/grades/sehr-sch%C3%B6n-vorz%C3%BCglich/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alexandrion-coins.github.io/coins-dacia/grades/sehr-sch%C3%B6n-vorz%C3%BCglich/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Grades on Coin Collection Ledger</title>
+		<link>http://localhost:1313/grades/</link>
+		<description>Recent content in Grades on Coin Collection Ledger</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 03 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/grades/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>MS-63</title>
+				<link>http://localhost:1313/grades/ms-63/</link>
+				<pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/grades/ms-63/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
