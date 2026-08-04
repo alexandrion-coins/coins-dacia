@@ -8,8 +8,8 @@ weight: "17.02 g"
 diameter: "30 mm"
 die_axis: "1h"
 ric_ref: "Thompson 195; Müller 368"
-obverse_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lysimachus_tetradrachm_Amphipolis_c._288-281_BC.jpg/640px-Lysimachus_tetradrachm_Amphipolis_c._288-281_BC.jpg"
-reverse_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lysimachus_tetradrachm_Amphipolis_c._288-281_BC.jpg/640px-Lysimachus_tetradrachm_Amphipolis_c._288-281_BC.jpg"
+obverse_image: "images/caesar_elephant_obverse.jpg"
+reverse_image: "images/caesar_elephant_obverse.jpg"
 draft: false
 ---
 
