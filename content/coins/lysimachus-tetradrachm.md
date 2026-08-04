@@ -8,8 +8,8 @@ weight: "17.02 g"
 diameter: "30 mm"
 die_axis: "1h"
 ric_ref: "Thompson 195; Müller 368"
-obverse_image: "images/caesar_elephant_obverse.jpg"
-reverse_image: "images/caesar_elephant_obverse.jpg"
+obverse_image: "https://alexandrion-coins.github.io/coins-dacia/images/caesar_elephant_obverse.jpg"
+reverse_image: "https://alexandrion-coins.github.io/coins-dacia/images/caesar_elephant_obverse.jpg"
 draft: false
 ---
 
